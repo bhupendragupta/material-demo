@@ -1,3 +1,8 @@
+
+#This project was built to get the understanding of the angular material design toolkit. 
+#the app.component.html file is a big file with all the material components and their usage
+
+
 # MaterialDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
