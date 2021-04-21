@@ -53,14 +53,16 @@ each level definitely has font size, font-weight and line-height
 
 <!-- Buttons -->
 <div>
-  <button mat-raised-button>Mat Raised Button</button>
+  <button mat-raised-button matTooltip="Raised">
+    Mat Raised Button With Tooltip
+  </button>
   <button mat-button>Normal Mat Button</button>
   <button mat-flat-button>Flat button</button>
   <button mat-stroked-button>stroked button</button>
 </div>
 <!-- Circular Buttons -->
 <div>
-  <button mat-icon-button>Icon</button>
+  <button mat-icon-button matTooltip="Icon button">Icon</button>
   <button mat-fab>Fab</button>
   <button mat-mini-fab>Fab mini</button>
 </div>
@@ -283,4 +285,25 @@ Tabs
     <mat-option value="react">React</mat-option>
     <mat-option value="vue">Vue</mat-option>
   </mat-select>
+</mat-form-field>
+<br />
+<div>---------------------checkbox---------------------</div>
+<br />
+<mat-checkbox>Subscribe</mat-checkbox>
+<br />
+<mat-checkbox color="primary">Are you sure?</mat-checkbox>
+<br />
+<div>--------------------------radio button------------------</div>
+<mat-radio-group>
+  <mat-radio-button color="primary" value="a">Angular</mat-radio-button>
+  <mat-radio-button value="r">React</mat-radio-button>
+  <mat-radio-button value="v"> Vue</mat-radio-button>
+</mat-radio-group>
+<br />
+<div>--------------------------datepicker------------------</div>
+
+<mat-form-field>
+  <input matInput [matDatepicker]="mydate" />
+  <mat-datepicker-toggle [for]="mydate" matSuffix></mat-datepicker-toggle>
+  <mat-datepicker #mydate></mat-datepicker>
 </mat-form-field>
